@@ -11,7 +11,7 @@ app
 .set('view engine', 'html')
 .set('views', __dirname+'/../views/templates')
 .get('/', function (req, res) {
-    res.render('index.html', {title: 'ok', history: history});
+    res.render('index.html', {title: 'ok'});
 })
 .use(express.static(__dirname+'/../views/static'));
 
