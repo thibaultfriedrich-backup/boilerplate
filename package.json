@@ -4,12 +4,9 @@
   "description": "description",
   "main": "src/app.js",
   "scripts": {
-    "start": "node src/app.js",
+      "start": "node src/app.js",
+      "prestart": "grunt less",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ThibaultFriedrich/boilerplate.git"
   },
   "keywords": [
     "football",
@@ -18,10 +15,6 @@
   ],
   "author": "Thibault Friedrich",
   "license": "LGPL-3.0",
-  "bugs": {
-    "url": "https://github.com/ThibaultFriedrich/boilerplate/issues"
-  },
-  "homepage": "https://github.com/ThibaultFriedrich/boilerplate#readme",
   "dependencies": {
     "express": "^4.13.4",
     "grunt": "^1.0.1",

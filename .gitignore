@@ -1,0 +1,4 @@
+node_modules/*
+views/static/bower_components/*
+*.swp
+views/static/style/style.min.css
