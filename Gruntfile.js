@@ -15,16 +15,16 @@ module.exports = function(grunt) {
               ieCompat: true
           },
           dev: {
-              cwd: 'views/assets/style',
+              cwd: 'views/static/style',
               src: ['style.less'],
-              dest: 'views/assets/style',
+              dest: 'views/static/style',
               expand: true,
               ext: '.min.css'
           }
       },
       watch: {
           less: {
-              files: ['views/assets/style/*.less'],
+              files: ['views/static/style/*.less'],
               tasks: ['less:dev'],
               options: {
                   spawn: false,
@@ -33,7 +33,7 @@ module.exports = function(grunt) {
       },
        clean: {
            options: { force: true },
-           all: ['views/assets/style/style.min.css']
+           all: ['views/static/style/style.min.css']
        }
   });
 
