@@ -14,8 +14,7 @@ app
     res.render('index.html', {title: 'ok'});
 })
 .use(express.static(__dirname+'/../views/static'))
-.use(express.static('bower_components',__dirname+'/../views/bower_components'))
-.use(express.static('partials',__dirname+'/../views/partials'));
+.use('/partials', express.static(__dirname+'/../views/partials'));
 
 var port = process.env.PORT || 8080;
 
